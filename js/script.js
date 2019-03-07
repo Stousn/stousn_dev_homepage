@@ -40,3 +40,27 @@ function loadContent(page, name) {
     document.getElementById("pagename").innerHTML = name;
     w3_close();
 }
+
+function loadReadme() {
+    var url = "https://api.github.com/repos/Stousn/iOS-Apps-on-macOS/readme";
+
+    var request = new XMLHttpRequest();
+
+    request.open("GET", url);
+    request.addEventListener('load', function (event) {
+        if (request.status >= 200 && request.status < 300) {
+            console.log(request.responseText);
+            var encodedContent = JSON.parse(request.responseText);
+
+            console.log(encodedContent.content);
+            var content = atob(encodedContent.content);
+
+            document.getElementById("readme").innerHTML = content;
+
+
+        } else {
+            console.warn(request.statusText, request.responseText);
+        }
+    });
+    request.send();
+}
