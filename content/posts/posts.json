@@ -1,0 +1,37 @@
+[
+    {
+        "id": "ergo-bankler",
+        "name": "Stefan Reip",
+        "title": "Ergotherapie Bankler Homepage",
+        "summary": "A simple homepage for my girlfriend and local occupational therapist Vanessa Bankler."
+    },{
+        "id": "iosmac",
+        "name": "Stefan Reip",
+        "title": "iOS Apps on macOS",
+        "summary": "Cross-platform application for Apple's mobile and desktop operating systems with Ionic and Electron"
+    },
+    {
+        "id": "iosmac_scaffolding",
+        "name": "Stefan Reip",
+        "title": "Ionic/Electron iOS & macOS app scaffolding",
+        "summary": "Scaffolding Script to initialize an Ionic and Electron Cross-Platform application that targets iOS and macOS"
+    },
+    {
+        "id": "stousn_at",
+        "name": "Stefan Reip",
+        "title": "stousn.at",
+        "summary": "Development of my homepage"
+    },
+    {
+        "id": "stousn_dev",
+        "name": "Stefan Reip",
+        "title": "stousn.dev",
+        "summary": "Development of this page"
+    },
+    {
+        "id": "blog_stousn_at",
+        "name": "Stefan Reip",
+        "title": "blog.stousn.at",
+        "summary": "Development of my blog"
+    }
+]

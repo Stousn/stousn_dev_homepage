@@ -1,55 +1,39 @@
 <!DOCTYPE html>
-<html lan="en">
-    <head>
-        <title>stousn.dev</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Stousn, developer's page containing projects" />
-        <meta name="keywords"
-            content="Stousn, Stefan Reip, Dev, Developer, Entwickler, Software, Projekte, Projects, Steiermark, Leoben" />
-        <meta property="og:url" content="https://stousn.dev" />
-        <meta property="og:site_name" content="stousn.dev" />
-        <meta property="article:tag"
-            content="Stousn, Stefan Reip, Dev, Developer, Entwickler, Software, Projekte, Projects, Steiermark, Leoben" />
-        <!-- <meta name="twitter:card" content="images/avatar.jpg" /> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/colors.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
-        <link rel="manifest" href="ico/site.webmanifest">
-    </head>
-    <body class="w3-theme-l4">
-        <!--SIDE BAR-->
-        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-large w3-theme-d4" onclick="w3_close()">
-                Close &times;
-            </button>
-            <a href="#" class="w3-bar-item w3-button" onclick="loadContent('projects.html', 'Projects')">Projects</a>
-            <a href="#" class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Imprint')">Imprint</a>
-            <a href="https://stousn.at" class="w3-bar-item w3-button w3-theme-l4">
-                stousn.at
-            </a>
-        </div>
+<html>
 
-        <!--TITLE BAR-->
-        <div class="w3-bar w3-large w3-theme-d3">
-            <a href="#" class="w3-bar-item w3-button" onclick="w3_open()" id="openNav">
-                <i class="fa fa-bars"></i>
-            </a>
-            <span class="w3-bar-item">stousn.dev</span>
-            <span id="pagename" class="w3-bar-item w3-right">Projects</span>
-        </div>
+<head>
+    <title>stousn.dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Stousn, developer's page containing projects" />
+    <meta name="keywords"
+        content="Stousn, Stefan Reip, Dev, Developer, Entwickler, Software, Projekte, Projects, Steiermark, Leoben" />
+    <meta property="og:url" content="https://stousn.dev" />
+    <meta property="og:site_name" content="stousn.dev" />
+    <meta property="article:tag"
+        content="Stousn, Stefan Reip, Dev, Developer, Entwickler, Software, Projekte, Projects, Steiermark, Leoben" />
+    <!-- <meta name="twitter:card" content="images/avatar.jpg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="ico/site.webmanifest">
+    <script type="module" src="/app.js"></script>
+</head>
 
-        <!--MAIN CONTENT-->
-        <div id="content" class="w3-container w3-content"
-            w3-include-html="content/projects.html">
-        </div>
-            <script src="js/github.js" async defer></script>
-            <script src="js/script.js" async defer></script>
-            <script src="js/showdown.js" async defer></script>
-    </body>
+<body class="w3-theme-l4">
+    <!--SIDE BAR-->
+
+    <div id="header_container"></div>
+
+    <div id="page_container" class="w3-container w3-content" >
+        <article> Loading....</article>
+    </div>
+</body>
+    
 </html>
