@@ -41,10 +41,35 @@ let PostShow = {
         let html = await getHtml(post.content)
         document.getElementById('pagename').innerHTML = '<a href="/#/">Projects</a> > <a href="/#/p/' + post.id + '">' + post.title + '</a>'
         
+        let readme = null
+
+        if (post.readme) {
+            readme = await getReadme(post.readme)
+            document.getElementById('modal').style.display="block"
+        }
+
         return /*html*/`
             <div class="w3-panel w3-white w3-card w3-display-container">
                 <h3>${post.title}</h3>
+                <div class="w3-bar" id="modal" style="display:none">
+                    <a onclick="document.getElementById('modal').style.display='block'" class="w3-button w3-right w3-theme-d3">Show README.md</a>
+                </div>
                 ${html}
+            </div>
+            <div id="modal" class="w3-modal">
+                <div class="w3-modal-content">
+                    <header class="w3-container w3-white">
+                        <span onclick="document.getElementById('modal').style.display='none'"
+                            class="w3-button w3-display-topright">&times;</span>
+                        <h2>${post.title} - README.md</h2>
+                    </header>
+                    <div class="w3-container">
+                        ${readme}
+                    </div>
+                    <footer class="w3-container w3-theme-d3">
+                        <p></p>
+                    </footer>
+                </div>
             </div>
         `
     }
