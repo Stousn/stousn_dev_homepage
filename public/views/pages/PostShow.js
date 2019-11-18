@@ -54,7 +54,7 @@ let getReadme = async (url) => {
 let PostShow = {
 
     render : async () => {
-        document.getElementById('page_container').innerHTML = '<div class="w3-container w3-center"><i class="fa fa-spinner w3-spin w3-center" style="font-size:64px padding:50px"></i></div>'
+        document.getElementById('page_container').innerHTML = '<div class="w3-container w3-center"><i class="fa fa-spinner w3-spin w3-center" style="font-size:64px; padding:50px;"></i></div>'
         let request = Utils.parseRequestURL()
         post = await getPost(request.id)
         let html = await getHtml(post.content)
