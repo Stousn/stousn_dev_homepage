@@ -10,5 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - uses: jakejarvis/firebase-deploy-action@master
+      with: 
+        args: --only hosting
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
