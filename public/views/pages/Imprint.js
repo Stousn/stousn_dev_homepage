@@ -12,7 +12,7 @@ let Imprint = {
             <div class="w3-panel w3-white w3-card w3-display-container">
                 <p><b>Impressum</b></p>
                 <b>Stefan Reip, BSc</b>
-                <p>8700 Ferdinand Hanusch-Straße 61 | Austria</p>
+                <p>8700 Leoben | Ferdinand Hanusch-Straße 61 | Austria</p>
                 <p>E-Mail: stefanreip+stousndev@gmail.com</p>
                 <p>Eintragungsnummer Gesundheitsberuferegister: <a href="https://gbr-public.ehealth.gv.at/Detail.aspx?ID=89643"
                         target="_blank">18-GBR-003671</a></p>
