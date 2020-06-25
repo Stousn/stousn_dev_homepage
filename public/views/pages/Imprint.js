@@ -12,19 +12,12 @@ let Imprint = {
             <div class="w3-panel w3-white w3-card w3-display-container">
                 <p><b>Impressum</b></p>
                 <b>Stefan Reip, BSc</b>
-                <p>8700 Ferdinand Hanusch-Straße 61 | Austria</p>
+                <p>Leoben | Austria (genaue Adresse per Mail erfragbar)</p>
                 <p>E-Mail: stefanreip+stousndev@gmail.com</p>
-                <p>Eintragungsnummer Gesundheitsberuferegister: <a href="https://gbr-public.ehealth.gv.at/Detail.aspx?ID=89643"
-                        target="_blank">18-GBR-003671</a></p>
-                <!--UID-Nr: 91827364-->
-                <p>Berufsrecht: MTD-Gesetz abrufbar via <a href="www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a></p>
-                <p>Verbraucher haben die Möglichkeit, Beschwerden an die Online-Streitbeilegungsplattform der EU zu richten: <a
-                        href="http://ec.europa.eu/odr" target="_blank">http://ec.europa.eu/odr</a>.<br>
-                    Sie können allfällige Beschwerde auch an die oben angegebene E-Mail-Adresse richten.</p>
             </div>
 
             <div class="w3-panel w3-white w3-card w3-display-container">
-                <p><b>Haftungs­ausschluss</b></p>
+                <p><b>Haftungsausschluss</b></p>
                 <p>
                     Im Hinblick auf die technischen Eigenschaften des Internet kann keine Gewähr für die Authentizität, Richtigkeit
                     und
