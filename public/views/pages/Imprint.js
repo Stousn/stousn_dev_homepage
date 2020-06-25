@@ -11,7 +11,7 @@ let Imprint = {
 
             <div class="w3-panel w3-white w3-card w3-display-container">
                 <p><b>Impressum</b></p>
-                <b>Stefan Reip, BSc</b>
+                <b>Stefan Reip, MSc</b>
                 <p>Leoben | Austria (genaue Adresse per Mail erfragbar)</p>
                 <p>E-Mail: stefanreip+stousndev@gmail.com</p>
             </div>
