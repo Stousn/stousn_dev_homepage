@@ -1,0 +1,16 @@
+name: CI
+
+on: 
+  push:
+    branches: 
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: jakejarvis/firebase-deploy-action@master
+      with: 
+        args: --project stousn-development
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
