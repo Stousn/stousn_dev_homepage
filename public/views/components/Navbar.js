@@ -5,11 +5,12 @@ let Navbar = {
                 <button class="w3-bar-item w3-button w3-large w3-theme-d4" id="closeNav">
                     Close &times;
                 </button>
-                <a class="w3-bar-item w3-button" href="/#/">Projects</a>
+                <a class="w3-bar-item w3-button" href="/#/">Business Card</a>
+                <a class="w3-bar-item w3-button" href="/#/projects">Projects</a>
                 <a class="w3-bar-item w3-button" href="/#/imprint">Imprint</a>
-                <a href="https://stousn.at" class="w3-bar-item w3-button w3-theme-l4">
-                    stousn.at
-                </a>
+                <a class="w3-bar-item w3-button" href="/#/disclaimer">Disclaimer</a>
+                <a class="w3-bar-item w3-button" href="/#/privacy">Privacy</a>
+                <homepage></homepage>
             </div>
             <nav class="w3-bar w3-large w3-theme-d3" role="navigation" aria-label="main navigation">
                 <div class="container">
@@ -19,7 +20,7 @@ let Navbar = {
                         </a>
                     </div>
                 </div>
-                <span class="w3-bar-item"><a href="/#/" style="text-decoration: none">stousn.dev</a></span>
+                <span class="w3-bar-item"><a href="/#/" style="text-decoration: none" id="sitename">stousn.dev</a></span>
                 <span id="pagename" class="w3-bar-item w3-right">Projects</span>
             </nav>
         `
@@ -33,6 +34,15 @@ let Navbar = {
         document.getElementById("closeNav").addEventListener("click", () => {
             document.getElementById("sidebar").style.display = "none";
         });
+        function onPageInit() {
+            window.title = window.location.hostname.replace('www.', '')
+            document.getElementById('sitename').innerText = window.location.hostname.replace('www.', '')
+            document.getElementsByTagName('homepage')[0].innerHTML = '<a href = "https://' +
+                window.location.hostname.replace('www.', '').replace('dev', 'at') +
+                '" class="w3-bar-item w3-button w3-theme-l4" >' +
+                window.location.hostname.replace('www.', '').replace('dev', 'at') +
+                '</a >'
+        } onPageInit()
     }
 
 }
