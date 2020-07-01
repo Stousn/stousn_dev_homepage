@@ -1,20 +1,26 @@
 "use strict";
 
-import Home         from './views/pages/Home.js'
-import Imprint      from './views/pages/Imprint.js'
-import Error404     from './views/pages/Error404.js'
-import PostShow     from './views/pages/PostShow.js'
+import Home from './views/pages/Home.js'
+import Projects from './views/pages/Projects.js'
+import Imprint from './views/pages/Imprint.js'
+import Disclaimer from './views/pages/Disclaimer.js'
+import Privacy from './views/pages/Privacy.js'
+import Error404 from './views/pages/Error404.js'
+import PostShow from './views/pages/PostShow.js'
 // import Register     from './views/pages/Register.js'
 
-import Navbar       from './views/components/Navbar.js'
+import Navbar from './views/components/Navbar.js'
 
-import Utils        from './services/Utils.js'
+import Utils from './services/Utils.js'
 
 // List of supported routes. Any url other than these routes will throw a 404 error
 const routes = {
-    '/'             : Home
-    , '/imprint'    : Imprint
-    , '/p/:id'      : PostShow
+    '/': Home,
+    '/imprint': Imprint,
+    '/disclaimer': Disclaimer,
+    '/privacy': Privacy,
+    '/projects': Projects,
+    '/p/:id': PostShow,
 };
 
 

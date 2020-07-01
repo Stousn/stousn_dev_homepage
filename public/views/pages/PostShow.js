@@ -58,7 +58,7 @@ let PostShow = {
         let request = Utils.parseRequestURL()
         post = await getPost(request.id)
         let html = await getHtml(post.content)
-        document.getElementById('pagename').innerHTML = '<a href="/#/">Projects</a> > <a href="/#/p/' + post.id + '">' + post.title + '</a>'
+        document.getElementById('pagename').innerHTML = '<a href="/#/projects">Projects</a> > <a href="/#/p/' + post.id + '">' + post.title + '</a>'
         
         let readme = null
 
