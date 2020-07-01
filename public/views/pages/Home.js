@@ -1,6 +1,6 @@
 let Home = {
     render: async () => {
-        document.getElementById('pagename').innerHTML = '<a href="/#/imprint">Business Card</a>'
+        document.getElementById('pagename').innerHTML = '<a href="/#/">Business Card</a>'
         let view =  /*html*/`
             <div class="w3-panel w3-white w3-card w3-display-container">
                 <h2>Business Card</h2>
