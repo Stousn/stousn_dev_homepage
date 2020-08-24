@@ -21,7 +21,7 @@ let Imprint = {
                     Österreich
                 </p>
                 <p><b>Unternehmensgegenstand:</b> IT Dienstleistungen</p>
-                <p><b>E-Mail:</b> stefanreip+stousndev@gmail.com</p>
+                <p><b>E-Mail:</b> hello@stefanreip.dev</p>
                 
                 <p><b>Berufsrecht:</b> Gewerbeordnung: <a href="www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a></p>
                 <p><b>Aufsichtsbehörde/Gewerbebehörde:</b> Bezirkshauptmannschaft Leoben</p>
