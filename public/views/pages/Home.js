@@ -14,7 +14,7 @@ let Home = {
                     In addition, the installation and maintenance of software (e.g. setting up customer and appointment management
                     software), setting up domains including managing DNS entries and providing online presence (homepage, social media page, ...)
                     <br>
-                    If you are interested <a href="mailto:stefanreip@gmail.com?subject=Anfrage%20bzgl.%20eines%20Auftrags">contact me</a>.
+                    If you are interested <a href="mailto:office@stefanreip.dev?subject=Anfrage%20bzgl.%20eines%20Auftrags">contact me</a>.
                 </p>
                 </p>
             </div>
