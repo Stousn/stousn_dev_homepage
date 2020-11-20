@@ -20,12 +20,14 @@ let Imprint = {
                     <br>
                     Österreich
                 </p>
-                <p><b>Unternehmensgegenstand:</b> IT Dienstleistungen</p>
+                <p><b>Unternehmensgegenstand:</b> Dienstleistungen in der automatischen Datenverarbeitung und Informationstechnik</p>
                 <p><b>E-Mail:</b> hello@stefanreip.dev</p>
                 
                 <p><b>Berufsrecht:</b> Gewerbeordnung: <a href="www.ris.bka.gv.at" target="_blank">www.ris.bka.gv.at</a></p>
                 <p><b>Aufsichtsbehörde/Gewerbebehörde:</b> Bezirkshauptmannschaft Leoben</p>
                 <p><b>Berufsbezeichnung:</b> Software Entwickler. Master of Science in Engineering erworben in Österreich.</p>
+                <p><b>GISA-Zahl: </b>33121833</p>
+                <p>Umsatzsteuerfrei aufgrund der Kleinunternehmerregelung gem. § 6 Abs. 1 Z 27 UStG</p>
             </div>
 
             
