@@ -1,13 +1,7 @@
 let Privacy = {
     render : async () => {
-        document.getElementById('pagename').innerHTML = '<a href="/#/imprint">Privacy</a>'
+        document.getElementById('pagename').innerHTML = '<a href="/#/privacy">Datenschutzerklärung</a>'
         let view =  /*html*/`
-            <div class="w3-panel w3-white w3-card w3-display-container">
-                <h3>Privacy</h3>
-                <p>
-                    Because this page is published under Austrian law, the disclaimer is written in German language.
-                </p>
-            </div>
             <div class="w3-panel w3-white w3-card w3-display-container">
                 <h3>Datenschutzerklärung</h3>
                 <h4>Datenschutz</h4>

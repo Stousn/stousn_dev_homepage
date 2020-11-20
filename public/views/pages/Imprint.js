@@ -1,16 +1,9 @@
 let Imprint = {
     render : async () => {
-        document.getElementById('pagename').innerHTML = '<a href="/#/imprint">Imprint</a>'
+        document.getElementById('pagename').innerHTML = '<a href="/#/imprint">Impressum</a>'
         let view =  /*html*/`
             <div class="w3-panel w3-white w3-card w3-display-container">
-                <p><b>Imprint</b></p>
-                <p>
-                    Because this page is published under Austrian law, the imprint is written in German language.
-                </p>
-            </div>
-
-            <div class="w3-panel w3-white w3-card w3-display-container">
-                <p><b>Impressum</b></p>
+                <h3>Impressum</h3>
                 <p>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.</p>
                 <b>Stefan Reip, MSc</b>
                 <p>
