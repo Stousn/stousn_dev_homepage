@@ -21,7 +21,7 @@ let getPostsList = async () => {
 
 let Projects = {
     render : async () => {
-        document.getElementById('pagename').innerHTML = '<a href="/#/projects">Projects</a>'
+        document.getElementById('pagename').innerHTML = '<a href="/#/projects">Projekte</a>'
         document.getElementById('page_container').innerHTML = '<div class="w3-container w3-center"><i class="fa fa-spinner w3-spin w3-center" style="font-size:64px; padding:50px;"></i></div>'
         let posts = await getPostsList()
         let view =  posts.map(post => /*html*/`

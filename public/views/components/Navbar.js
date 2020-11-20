@@ -6,10 +6,10 @@ let Navbar = {
                     Close &times;
                 </button>
                 <a class="w3-bar-item w3-button" href="/#/">Business Card</a>
-                <a class="w3-bar-item w3-button" href="/#/projects">Projects</a>
-                <a class="w3-bar-item w3-button" href="/#/imprint">Imprint</a>
-                <a class="w3-bar-item w3-button" href="/#/disclaimer">Disclaimer</a>
-                <a class="w3-bar-item w3-button" href="/#/privacy">Privacy</a>
+                <a class="w3-bar-item w3-button" href="/#/projects">Projekte</a>
+                <a class="w3-bar-item w3-button" href="/#/imprint">Impressum</a>
+                <a class="w3-bar-item w3-button" href="/#/disclaimer">Haftungsausschluss</a>
+                <a class="w3-bar-item w3-button" href="/#/privacy">Datenschutz</a>
                 <homepage></homepage>
             </div>
             <nav class="w3-bar w3-large w3-theme-d3" role="navigation" aria-label="main navigation">
