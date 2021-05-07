@@ -42,6 +42,7 @@ let Navbar = {
         });
         function onPageInit() {
             window.title = window.location.hostname.replace('www.', '')
+            document.title = window.location.hostname.replace('www.', '')
             editSiteName('sitename')
             editSiteName('sitename-small')
 
