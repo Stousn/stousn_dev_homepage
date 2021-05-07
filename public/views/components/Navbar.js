@@ -24,7 +24,7 @@ let Navbar = {
                     </div>
                 </div>
                 <span class="w3-bar-item w3-hide-small"><a href="/#/" style="text-decoration: none" id="sitename">stousn.dev</a></span>
-                <span class="w3-bar-item w3-hide w3-hide-small">></span>
+                <span class="w3-bar-item w3-hide-medium w3-hide-small">></span>
                 <span id="pagename" class="w3-bar-item">Projects</span>
                 <a href="https://www.linkedin.com/company/stefanreip-dev" target="_blank"><span id="linkedin" class="w3-bar-item w3-right w3-button"><i class="fa fa-linkedin"></i></span></a>
                 <a href="https://www.facebook.com/stefanreip.dev/" target="_blank"><span id="facebook" class="w3-bar-item w3-right w3-button"><i class="fa fa-facebook"></i></span></a>
