@@ -2,36 +2,25 @@
     {
         "id": "ergo-bankler",
         "name": "Stefan Reip",
-        "title": "Ergotherapie Bankler Homepage",
-        "summary": "A simple homepage for my girlfriend and local occupational therapist Vanessa Bankler."
-    },{
-        "id": "iosmac",
-        "name": "Stefan Reip",
-        "title": "iOS Apps on macOS",
-        "summary": "Cross-platform application for Apple's mobile and desktop operating systems with Ionic and Electron"
+        "title": "Homepage Ergotherapie Bankler",
+        "summary": "Eine minimalistische Homepage für Ergotherapeutin Vanessa Bankler."
     },
     {
         "id": "iosmac_scaffolding",
         "name": "Stefan Reip",
-        "title": "Ionic/Electron iOS & macOS app scaffolding",
-        "summary": "Scaffolding Script to initialize an Ionic and Electron Cross-Platform application that targets iOS and macOS"
+        "title": "Ionic/Electron iOS & macOS App Scaffolding",
+        "summary": "Scaffolding Script um eine Ionic und Electron Cross-Platform Applikation für iOS und macOS zu erzeugen"
     },
-    {
-        "id": "stousn_at",
+{
+        "id": "shortcuts",
         "name": "Stefan Reip",
-        "title": "stousn.at",
-        "summary": "Development of my homepage"
+        "title": "iPadOS Shortcuts Dokumentationssystem",
+        "summary": "Ein Dokumentationssystem am iPad durch Nutzung von Shortcuts"
     },
     {
         "id": "stousn_dev",
         "name": "Stefan Reip",
         "title": "stousn.dev",
-        "summary": "Development of this page"
-    },
-    {
-        "id": "blog_stousn_at",
-        "name": "Stefan Reip",
-        "title": "blog.stousn.at",
-        "summary": "Development of my blog"
+        "summary": "Development dieser Single-Page-Applikation"
     }
 ]

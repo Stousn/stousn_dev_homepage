@@ -28,7 +28,7 @@ let Projects = {
            <div class="w3-panel w3-white w3-card w3-display-container">
                 <a href="#/p/${post.id}" style="text-decoration: none"><h3>${post.title}</h1></a>
                 <p>${post.summary}</p>
-                <p><a href="#/p/${post.id}">continue reading</a></p>
+                <p>&gt;&nbsp;<a href="#/p/${post.id}">weiter lesen</a></p>
             </div>`).join('\n')
         
         
