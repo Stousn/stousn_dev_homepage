@@ -6,6 +6,12 @@
         "summary": "Eine minimalistische Homepage für Ergotherapeutin Vanessa Reip."
     },
     {
+        "id": "link-tree",
+        "name": "Stefan Reip",
+        "title": "Persönlicher Linkbaum",
+        "summary": "Ein persönlicher DSGVO-Konformer Linkbaum mit eigener Domain für dein Social Media Profil."
+    },
+    {
         "id": "iosmac_scaffolding",
         "name": "Stefan Reip",
         "title": "Ionic/Electron iOS & macOS App Scaffolding",
