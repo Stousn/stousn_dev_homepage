@@ -1,0 +1,42 @@
+<div id="header_container">
+  <div *ngIf="showNav" class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="sidebar">
+    <button class="w3-bar-item w3-button w3-large w3-theme-d4" (click)="showNav = false">
+      Close &times;
+    </button>
+    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/">Business Card</a>
+    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/projects">Projekte</a>
+    <!-- <a class="w3-bar-item w3-button" href="/#/projects">Kontakt</a> -->
+    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/imprint">Impressum</a>
+    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/disclaimer">Haftungsausschluss</a>
+    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/privacy">Datenschutz</a>
+    <!-- <a class="w3-bar-item w3-button">Cookie-Präferenzen</a> -->
+    <!-- <homepage></homepage> -->
+  </div>
+  <nav class="w3-bar w3-large w3-theme-d3 w3-hide-medium w3-hide-large" role="title" aria-label="main title">
+    <span class="w3-bar-item" style="text-align: center; width: 100%;"><app-breadcrumb></app-breadcrumb></span>
+  </nav>
+  <nav class="w3-bar w3-large w3-theme-d3" id="sidenav" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div>
+        <a class="w3-bar-item w3-button" (click)="showNav = true" id="openNav">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <app-breadcrumb class="w3-hide-small"></app-breadcrumb>
+    <a href="https://www.linkedin.com/company/stefanreip-dev" target="_blank"><span id="linkedin"
+        class="w3-bar-item w3-right w3-button"><i class="fa fa-linkedin"></i></span></a>
+    <a href="https://www.facebook.com/stefanreip.dev/" target="_blank"><span id="facebook"
+        class="w3-bar-item w3-right w3-button"><i class="fa fa-facebook"></i></span></a>
+  </nav>
+</div>
+
+<div id="page_container" class="w3-container w3-content">
+  <div *ngIf="this.showNav" id="overlay" (click)="this.showNav=false"></div>
+  <!-- <app-loader></app-loader> -->
+
+      <router-outlet></router-outlet>
+
+
+</div>
+
