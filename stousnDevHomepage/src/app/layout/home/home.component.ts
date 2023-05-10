@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from '../../globals';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+    public isDarkTheme: boolean;
 
-  constructor() { }
+    constructor(private readonly globals: Globals) {}
 
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+        this.globals.darkTheme$.subscribe((dark) => (this.isDarkTheme = dark));
+    }
 }

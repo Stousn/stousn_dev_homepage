@@ -1,42 +1,81 @@
-<div id="header_container">
-  <div *ngIf="showNav" class="w3-sidebar w3-bar-block w3-card w3-animate-left" id="sidebar">
-    <button class="w3-bar-item w3-button w3-large w3-theme-d4" (click)="showNav = false">
-      Close &times;
-    </button>
-    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/">Business Card</a>
-    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/projects">Projekte</a>
-    <!-- <a class="w3-bar-item w3-button" href="/#/projects">Kontakt</a> -->
-    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/imprint">Impressum</a>
-    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/disclaimer">Haftungsausschluss</a>
-    <a class="w3-bar-item w3-button" (click)="showNav = false" routerLink="/privacy">Datenschutz</a>
-    <!-- <a class="w3-bar-item w3-button">Cookie-Präferenzen</a> -->
-    <!-- <homepage></homepage> -->
-  </div>
-  <nav class="w3-bar w3-large w3-theme-d3 w3-hide-medium w3-hide-large" aria-label="breadcrumb navigation" role="navigation">
-    <span class="w3-bar-item" style="text-align: center; width: 100%;"><app-breadcrumb></app-breadcrumb></span>
-  </nav>
-  <nav class="w3-bar w3-large w3-theme-d3" id="sidenav" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div>
-        <a class="w3-bar-item w3-button" (click)="showNav = true" id="openNav">
-          <i class="fa fa-bars"></i>
-        </a>
+<div id="header_container"
+     class="sticky">
+   <div *ngIf="showNav"
+        class="w3-sidebar w3-bar-block w3-card w3-animate-left"
+        id="sidebar"
+        [class.w3-theme-d3]="this.isDarkTheme">
+      <button class="w3-bar-item w3-button w3-large w3-theme-d4"
+              (click)="showNav = false">
+         Close &times;
+      </button>
+      <a class="w3-bar-item w3-button"
+         (click)="showNav = false"
+         routerLink="/">Business Card</a>
+      <a class="w3-bar-item w3-button"
+         (click)="showNav = false"
+         routerLink="/projects">Projekte</a>
+      <!-- <a class="w3-bar-item w3-button" href="/#/projects">Kontakt</a> -->
+      <a class="w3-bar-item w3-button"
+         (click)="showNav = false"
+         routerLink="/imprint">Impressum</a>
+      <a class="w3-bar-item w3-button"
+         (click)="showNav = false"
+         routerLink="/disclaimer">Haftungsausschluss</a>
+      <a class="w3-bar-item w3-button"
+         (click)="showNav = false"
+         routerLink="/privacy">Datenschutz</a>
+      <!-- <a class="w3-bar-item w3-button">Cookie-Präferenzen</a> -->
+      <!-- <homepage></homepage> -->
+   </div>
+   <nav class="w3-bar w3-large w3-theme-d3 w3-hide-medium w3-hide-large sticky"
+        aria-label="breadcrumb navigation"
+        role="navigation">
+      <span class="w3-bar-item"
+            style="text-align: center; width: 100%;">
+         <app-breadcrumb></app-breadcrumb>
+      </span>
+   </nav>
+   <nav class="w3-bar w3-large w3-theme-d3 sticky"
+        id="sidenav"
+        role="navigation"
+        aria-label="main navigation">
+      <div class="container">
+         <div>
+            <a class="w3-bar-item w3-button"
+               (click)="showNav = true"
+               id="openNav">
+               <i class="fa fa-bars"></i>
+            </a>
+         </div>
       </div>
-    </div>
-    <app-breadcrumb class="w3-hide-small"></app-breadcrumb>
-    <a href="https://www.linkedin.com/company/stefanreip-dev" target="_blank" aria-label="Zum LinkedIn Profil"><span id="linkedin"
-        class="w3-bar-item w3-right w3-button"><i class="fa fa-linkedin"></i></span></a>
-    <a href="https://www.facebook.com/stefanreip.dev/" aria-label="Zur Facebook Seite" target="_blank"><span id="facebook"
-        class="w3-bar-item w3-right w3-button"><i class="fa fa-facebook"></i></span></a>
-  </nav>
+      <app-breadcrumb class="w3-hide-small"></app-breadcrumb>
+      <a (click)="this.toggleDarkMode()"
+         aria-label="Zwischen hellem und dunklem Modus umschalten"
+         title="Zwischen hellem und dunklem Modus umschalten"
+         target="_blank"><span id="toggleDarkMode"
+               class="w3-bar-item w3-right w3-button text-sun-yellow"><i class="fa"
+               [class.fa-sun-o]="this.isDarkTheme"
+               [class.fa-moon-o]="!this.isDarkTheme"></i></span></a>
+      <a href="https://www.linkedin.com/company/stefanreip-dev"
+         target="_blank"
+         aria-label="Zum LinkedIn Profil"><span id="linkedin"
+               class="w3-bar-item w3-right w3-button"><i class="fa fa-linkedin"></i></span></a>
+      <a href="https://www.facebook.com/stefanreip.dev/"
+         aria-label="Zur Facebook Seite"
+         target="_blank"><span id="facebook"
+               class="w3-bar-item w3-right w3-button"><i class="fa fa-facebook"></i></span></a>
+
+   </nav>
 </div>
 
-<div id="page_container" class="w3-container w3-content">
-  <div *ngIf="this.showNav" id="overlay" (click)="this.showNav=false"></div>
-  <!-- <app-loader></app-loader> -->
+<div id="page_container"
+     class="w3-container w3-content">
+   <div *ngIf="this.showNav"
+        id="overlay"
+        (click)="this.showNav=false"></div>
+   <!-- <app-loader></app-loader> -->
 
-      <router-outlet></router-outlet>
+   <router-outlet></router-outlet>
 
 
 </div>
-

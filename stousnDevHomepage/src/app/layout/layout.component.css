@@ -22,5 +22,17 @@
 
 .w3-sidebar {
   min-width: 33%;
+  z-index: 4;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
   z-index: 3;
 }
+
+.text-sun-yellow {
+  color: #ffee55!important;
+} 

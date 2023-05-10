@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from '../../../globals';
 
 @Component({
-  selector: 'app-stousn-dev',
-  templateUrl: './stousn-dev.component.html',
-  styleUrls: ['./stousn-dev.component.css']
+    selector: 'app-stousn-dev',
+    templateUrl: './stousn-dev.component.html',
+    styleUrls: ['./stousn-dev.component.css']
 })
 export class StousnDevComponent implements OnInit {
+    public isDarkTheme: boolean;
 
-  constructor() { }
+    constructor(private readonly globals: Globals) {}
 
-  ngOnInit() {
-
-    window.scrollTo(0, 0);
-  }
-
+    ngOnInit() {
+        this.globals.darkTheme$.subscribe((dark) => (this.isDarkTheme = dark));
+        window.scrollTo(0, 0);
+    }
 }
