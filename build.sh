@@ -4,6 +4,6 @@ ng build --prod
 cd ..
 rm -rf public
 mkdir public
-cp -R stousnDevHomepage/dist/ public/
+cp -R stousnDevHomepage/dist/* public/
 
 firebase deploy --project stousn-development
