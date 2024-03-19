@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Globals } from '../../../globals';
 
 @Component({
-    selector: 'app-shortcuts',
-    templateUrl: './shortcuts.component.html',
-    styleUrls: ['./shortcuts.component.css']
+    selector: 'app-birthday-quiz',
+    templateUrl: './birthday-quiz.component.html',
+    styleUrls: ['./birthday-quiz.component.css']
 })
-export class ShortcutsComponent implements OnInit {
+export class BirthdayQuizComponent implements OnInit {
     public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}

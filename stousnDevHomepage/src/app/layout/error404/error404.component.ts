@@ -7,7 +7,7 @@ import { Globals } from '../../globals';
     styleUrls: ['./error404.component.css']
 })
 export class Error404Component implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

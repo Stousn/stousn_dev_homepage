@@ -9,7 +9,7 @@ import { Globals } from '../globals';
 export class LayoutComponent implements OnInit {
     showNav = false;
 
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

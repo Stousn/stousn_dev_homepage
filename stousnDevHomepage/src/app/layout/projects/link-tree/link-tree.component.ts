@@ -7,7 +7,7 @@ import { Globals } from '../../../globals';
     styleUrls: ['./link-tree.component.css']
 })
 export class LinkTreeComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

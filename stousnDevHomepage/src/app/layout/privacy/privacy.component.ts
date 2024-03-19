@@ -7,7 +7,7 @@ import { Globals } from '../../globals';
     styleUrls: ['./privacy.component.css']
 })
 export class PrivacyComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

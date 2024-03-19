@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 export class Globals {
-    private darkTheme = new BehaviorSubject<boolean>(undefined);
+    private darkTheme = new BehaviorSubject<boolean>(true);
 
     public darkTheme$ = this.darkTheme.asObservable();
 

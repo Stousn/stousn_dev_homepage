@@ -7,7 +7,7 @@ import { Globals } from '../../../globals';
     styleUrls: ['./iosmac-scaffolding.component.css']
 })
 export class IosmacScaffoldingComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 
