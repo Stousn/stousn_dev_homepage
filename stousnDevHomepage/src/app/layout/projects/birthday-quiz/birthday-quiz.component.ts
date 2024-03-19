@@ -9,6 +9,10 @@ import { Globals } from '../../../globals';
 export class BirthdayQuizComponent implements OnInit {
     public isDarkTheme?: boolean;
 
+    public slideNumber = 0;
+
+    public name = '';
+
     constructor(private readonly globals: Globals) {}
 
     ngOnInit() {

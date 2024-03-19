@@ -6,6 +6,7 @@ import { HomeComponent } from './layout/home/home.component';
 import { ImprintComponent } from './layout/imprint/imprint.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PrivacyComponent } from './layout/privacy/privacy.component';
+import { BirthdayQuizComponent } from './layout/projects/birthday-quiz/birthday-quiz.component';
 import { ErgoReipComponent } from './layout/projects/ergo-reip/ergo-reip.component';
 import { IosmacScaffoldingComponent } from './layout/projects/iosmac-scaffolding/iosmac-scaffolding.component';
 import { LinkTreeComponent } from './layout/projects/link-tree/link-tree.component';
@@ -15,6 +16,15 @@ import { ShortcutsComponent } from './layout/projects/shortcuts/shortcuts.compon
 import { StousnDevComponent } from './layout/projects/stousn-dev/stousn-dev.component';
 
 const routes: Routes = [
+    {
+        path: 'birthday-quiz',
+        component: BirthdayQuizComponent,
+        data: {
+            breadcrumb: {
+                label: 'Birthday Quiz'
+            }
+        }
+    },
     {
         path: '',
         component: LayoutComponent,
