@@ -108,7 +108,7 @@ const routes: Routes = [
                     },
                     {
                         path: '**',
-                        redirectTo: '404'
+                        redirectTo: 'nope'
                     }
                 ]
             },
@@ -140,7 +140,7 @@ const routes: Routes = [
                 }
             },
             {
-                path: '404',
+                path: 'nope',
                 component: Error404Component,
                 data: {
                     breadcrumb: {
@@ -150,7 +150,7 @@ const routes: Routes = [
             },
             {
                 path: '**',
-                redirectTo: '404'
+                redirectTo: 'nope'
             }
         ]
     }
