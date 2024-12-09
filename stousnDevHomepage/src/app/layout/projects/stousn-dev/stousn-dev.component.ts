@@ -7,7 +7,7 @@ import { Globals } from '../../../globals';
     styleUrls: ['./stousn-dev.component.css']
 })
 export class StousnDevComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

@@ -40,7 +40,7 @@ export class OverviewComponent implements OnInit {
         }
     ];
 
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

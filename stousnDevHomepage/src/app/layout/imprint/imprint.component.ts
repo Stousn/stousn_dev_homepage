@@ -7,7 +7,7 @@ import { Globals } from '../../globals';
     styleUrls: ['./imprint.component.css']
 })
 export class ImprintComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

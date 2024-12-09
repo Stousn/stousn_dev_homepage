@@ -1,0 +1,67 @@
+<div id="page_container" class="w3-container w3-content">
+    <!-- SLIDE 0-->
+    <div [style.display]="slideNumber === 0 ? 'block' : 'none'" class="w3-panel w3-white w3-card w3-display-container" [class.w3-theme-d4]="true">
+        <h3>Fragebogen für über 30 jährige</h3>
+        <p>Füllen Sie bitte alle Fragen gewissenhaft und richtig aus. Die Fragen umfassen Wissens- und Meinungsfragen.</p>
+        <p>Wenn Sie alle Fragen beantwortet haben, dann nehmen Sie automatisch am Gewinnspiel teil. Sie können tolle Preise gewinnen.</p>
+        <div class="w3-bar">
+            <button class="w3-button w3-green w3-ripple" style="width: 100%;" (click)="slideNumber=1">Umfrage starten</button>
+        </div>
+
+        <small>
+            Ihre Daten sind uns wichtig! Daher sammeln wir sie auch. Wenn sie nicht einverstanden sind, dann schicken sie ein 5 seitiges Fax des handschriftlichen Wiederspruchs an +43 1 555-Nase
+        </small>
+    </div>
+
+    <!-- SLIDE 1 -->
+    <div [style.display]="slideNumber === 1 ? 'block' : 'none'" class="w3-panel w3-white w3-card w3-display-container" [class.w3-theme-d4]="true">
+        <h3>Frage 1</h3>
+        <p>Füllen Sie bitte alle Fragen gewissenhaft und richtig aus. Die Fragen umfassen Wissens- und Meinungsfragen.</p>
+        <p>Wenn Sie alle Fragen beantwortet haben, dann nehmen Sie automatisch am Gewinnspiel teil. Sie können tolle Preise gewinnen.</p>
+        <div class="w3-bar">
+            <button class="w3-button w3-green w3-ripple" style="width: 100%;" (click)="slideNumber=2">Umfrage starten</button>
+        </div>
+
+        <small>
+            Ihre Daten sind uns wichtig! Daher sammeln wir sie auch. Wenn sie nicht einverstanden sind, dann schicken sie ein 5 seitiges Fax des handschriftlichen Wiederspruchs an +43 1 555-Nase
+        </small>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="consent" class="w3-modal" style="display: block;">
+    <div class="w3-modal-content  w3-animate-zoom  w3-card-4">
+        <header class="w3-container w3-red">
+            <!-- <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span> -->
+            <h2>Altersabfrage</h2>
+        </header>
+        <div class="w3-container w3-white">
+            <p>Sie müssen zumindest 30 Jahre alt sein um an der Umfrage Teilzunehmen.</p>
+            <p>Sind Sie älter als 30 Jahre?</p>
+        </div>
+        <footer class="w3-white">
+            <div class="w3-bar w3-white">
+                <button class="w3-button w3-green w3-ripple" style="width: 50%;" onclick="document.getElementById('consent').style.display='none'">Ja</button>
+                <button class="w3-button w3-red w3-ripple" style="width: 50%;" onclick="document.getElementById('consent2').style.display='block'">Nein</button>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<div id="consent2" class="w3-modal" style="display: none;">
+    <div class="w3-modal-content  w3-animate-zoom  w3-card-4">
+        <header class="w3-container w3-red">
+            <!-- <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span> -->
+            <h2>Wirklich?</h2>
+        </header>
+        <div class="w3-container w3-white">
+            <p>Sind sie sich sicher, dass sie jünger als 30 Jahre sind?</p>
+        </div>
+        <footer class="w3-white">
+            <div class="w3-bar w3-white">
+                <button class="w3-button w3-green w3-ripple" style="width: 50%;" onclick="window.location.href='https://stefanreip.dev'">Ja, ich bin zu jung</button>
+                <button class="w3-button w3-red w3-ripple" style="width: 50%;" onclick="document.getElementById('consent2').style.display='none'">Nein, unsicher</button>
+            </div>
+        </footer>
+    </div>
+</div>

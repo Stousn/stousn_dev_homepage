@@ -7,7 +7,7 @@ import { Globals } from '../../../globals';
     styleUrls: ['./ergo-reip.component.css']
 })
 export class ErgoReipComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

@@ -7,7 +7,7 @@ import { Globals } from '../../globals';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 

@@ -7,7 +7,7 @@ import { Globals } from '../../globals';
     styleUrls: ['./disclaimer.component.css']
 })
 export class DisclaimerComponent implements OnInit {
-    public isDarkTheme: boolean;
+    public isDarkTheme?: boolean;
 
     constructor(private readonly globals: Globals) {}
 
