@@ -1,10 +1,9 @@
 #!/bin/bash
-cd julian_homepage
-git checkout master
-git pull
+cd stousnDevHomepage
+ng build --prod
 cd ..
 rm -rf public
 mkdir public
-cp -R julian_homepage/ public/
+cp -R stousnDevHomepage/dist/ public/
 
 firebase deploy --project stousn-development

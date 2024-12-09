@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "julianreip",
     "public": "public",
     "ignore": [
       "firebase.json",
